@@ -165,6 +165,29 @@
 </header>
 
 <div class="container">
+    <section class="module-section">
+        <h2>學習內容總覽</h2>
+        <h3>學習內容1、學習履歷-資料分析</h3>
+            <ul>
+                <li><a href="#lesson11">數據分析的核心思維與標準化流程</a></li>
+                <li><a href="#lesson12">開發環境配置與版本控制基礎：Git</a></li>
+                <li><a href="#lesson13">全球數據工具生態系與雲端平台分析</a></li>
+                <li><a href="#lesson14">Power BI 深度解析：從資料架構到視覺化設計</a></li>
+                <li><a href="#lesson15">數據交付與 ETL 現代化工程</a></li>
+                <li><a href="#lesson16">三位一體整合應用：SQL Server、Pandas 與 Power BI</a></li>
+            </ul>
+        <h3>學習內容2：學習履歷-SQL Server</h3>
+            <ul>
+                <li><a href="#lesson21">核心開發基石：T-SQL 語法精要與邏輯控制</a></li>
+                <li><a href="#lesson22">進階查詢結構：複雜資料處理與分頁演算法</a></li>
+                <li><a href="#lesson23">邏輯封裝與模組化開發：視圖、函數與預存程序</a></li>
+                <li><a href="#lesson24">資料工程核心：ETL 流程與語意層架構</a></li>
+                <li><a href="#lesson25">多維度分析應用：SSAS Cube 與 MDX 查詢技術</a></li>
+                <li><a href="#lesson26">資料安全與管理：權限架構與備份策略</a></li>
+                <li><a href="#lesson27">效能優化與存取實務：索引、壓縮與觸發程序</a></li>
+            </ul>
+
+    </section>
 
     <!-- 學習內容 1 -->
     <section class="module-section">
@@ -172,7 +195,7 @@
         <p><strong>主題：</strong>數據分析實戰全書：從 Git 版本控管到 Power BI 商業決策構建</p>
 
         <details open>
-            <summary>1. 數據分析的核心思維與標準化流程</summary>
+            <summary id="lesson11">1. 數據分析的核心思維與標準化流程</summary>
             <div class="details-content">
                 <p>在現代商業環境中，數據已成為企業最核心的戰略資產。然而，原始數據本身並不具備商業價值，唯有透過「標準化分析流程」才能將其轉化為可執行的決策。建立一套可重複、可驗證的框架，不僅能提升決策的精準度，更能降低跨部門溝通的技術門檻。</p>
                 <h4>數據分析六大必要步驟：問、找、清、看、分、用</h4>
@@ -230,7 +253,7 @@
         </details>
 
         <details>
-            <summary>2. 開發環境配置與版本控制基礎：Git</summary>
+            <summary id="lesson12">2. 開發環境配置與版本控制基礎：Git</summary>
             <div class="details-content">
                 <p>對於數據架構師而言，版本控制 (Version Control) 是專案開發的基礎建設，而非額外工作。它確保了程式碼與配置變更的「可追蹤性 (Traceability)」，在多人協作環境下防止檔案衝突，並為專案提供了隨時回溯的「安全網」。</p>
                 <h4>Git 全域配置與初始化規範</h4>
@@ -241,7 +264,7 @@
         </details>
 
         <details>
-            <summary>3. 全球數據工具生態系與雲端平台分析</summary>
+            <summary id="lesson13">3. 全球數據工具生態系與雲端平台分析</summary>
             <div class="details-content">
                 <p>當前的數據生態系呈現多元化發展，企業需根據「專業度、易用性、適用場景」三大維度進行工具選型。</p>
                 <h4>主流分析工具多維度比較</h4>
@@ -289,7 +312,7 @@
         </details>
 
         <details>
-            <summary>4. Power BI 深度解析：從資料架構到視覺化設計</summary>
+            <summary id="lesson14">4. Power BI 深度解析：從資料架構到視覺化設計</summary>
             <div class="details-content">
                 <p>Power BI 不僅是繪圖工具，它更是數據的「語意層 (Semantic Layer)」。它將底層複雜的關聯式資料轉化為決策者能直觀理解的商業洞察。</p>
                 <h4>檔案格式情境與管理規範</h4>
@@ -301,7 +324,7 @@
         </details>
 
         <details>
-            <summary>5. 數據交付與 ETL 現代化工程</summary>
+            <summary id="lesson15">5. 數據交付與 ETL 現代化工程</summary>
             <div class="details-content">
                 <p>高品質的報表源於嚴謹的數據工程。數據工程師 (DE) 負責技術端的資料交付，而數據分析師 (DA) 則負責需求挖掘，兩者間的界線在於「資料是否已準備好被分析」。</p>
                 <h4>ETL 工具選型與數據治理</h4>
@@ -312,7 +335,7 @@
         </details>
 
         <details>
-            <summary>6. 三位一體整合應用：SQL Server、Pandas 與 Power BI</summary>
+            <summary id="lesson16">6. 三位一體整合應用：SQL Server、Pandas 與 Power BI</summary>
             <div class="details-content">
                 <p>透過整合三種技術棧，我們能建立一套從資料存放至最終決策的端到端 (End-to-End) 工作流。</p>
                 <table>
@@ -355,7 +378,7 @@
         <p>作為一名資深企業資料架構師，我深知在生產環境中，程式碼的優劣不僅影響當下的執行效率，更決定了系統長期的維護成本與擴展性。本指南結合 T-SQL 邏輯精要、ETL 工程實務與 SSAS 多維度模型設計，旨在為開發者提供一套具備架構高度且可立即落地實作的技術框架。</p>
 
         <details open>
-            <summary>1. 核心開發基石：T-SQL 語法精要與邏輯控制</summary>
+            <summary id="lesson21">1. 核心開發基石：T-SQL 語法精要與邏輯控制</summary>
             <div class="details-content">
                 <p>T-SQL 是資料庫開發的靈魂。在高併發與大數據的場景下，精確的邏輯控制是確保資料一致性與效能的唯一手段。</p>
                 <h4>變數管理與系統變數應用</h4>
@@ -415,7 +438,7 @@ ELSE
         </details>
 
         <details>
-            <summary>2. 進階查詢結構：複雜資料處理與分頁演算法</summary>
+            <summary id="lesson22">2. 進階查詢結構：複雜資料處理與分頁演算法</summary>
             <div class="details-content">
                 <p>在現代商業智慧應用中，我們經常需要處理排名、移動平均或複雜的分頁需求，這要求開發者精通視窗函數與 CTE。</p>
                 <h4>CTE (Common Table Expression) 之戰略優勢</h4>
@@ -437,7 +460,7 @@ WHERE Temp2.員工編號 IS NULL; -- 取得排名 6-10 的員工</div>
         </details>
 
         <details>
-            <summary>3. 邏輯封裝與模組化開發：視圖、函數與預存程序</summary>
+            <summary id="lesson23">3. 邏輯封裝與模組化開發：視圖、函數與預存程序</summary>
             <div class="details-content">
                 <h4>視圖 (View) 的多重價值</h4>
                 <p>視圖主要用於隱藏複雜度與權限管控。架構師應善用 WITH SCHEMABINDING，這不僅能防止底層表結構被意外異動，更是建立「索引化視圖」的前提。</p>
@@ -489,7 +512,7 @@ END</div>
         </details>
 
         <details>
-            <summary>4. 資料工程核心：ETL 流程與語意層架構</summary>
+            <summary id="lesson24">4. 資料工程核心：ETL 流程與語意層架構</summary>
             <div class="details-content">
                 <h4>ETL 框架與業務邏輯實務</h4>
                 <p>在 Transform (轉換) 階段，我們利用 View 將原始資料轉化為分析屬性。</p>
@@ -501,7 +524,7 @@ END</div>
         </details>
 
         <details>
-            <summary>5. 多維度分析應用：SSAS Cube 與 MDX 查詢技術</summary>
+            <summary id="lesson25">5. 多維度分析應用：SSAS Cube 與 MDX 查詢技術</summary>
             <div class="details-content">
                 <h4>MDX 核心概念：Tuple 與 Set</h4>
                 <h4>時間序列與佔比分析</h4>
@@ -512,7 +535,7 @@ END</div>
         </details>
 
         <details>
-            <summary>6. 資料安全與管理：權限架構與備份策略</summary>
+            <summary id="lesson26">6. 資料安全與管理：權限架構與備份策略</summary>
             <div class="details-content">
                 <h4>行級安全性 (RLS) 實踐</h4>
                 <p>透過 RLS，不同部門的經理查詢同一張表卻能看到不同結果。</p>
@@ -522,7 +545,7 @@ END</div>
         </details>
 
         <details>
-            <summary>7. 效能優化與存取實務：索引、壓縮與觸發程序</summary>
+            <summary id="lesson27">7. 效能優化與存取實務：索引、壓縮與觸發程序</summary>
             <div class="details-content">
                 <h4>儲存優化：傳統索引 vs. CCSI</h4>
                 <p>在高階分析中，叢集資料行存放區索引 (CCSI) 是效能的分水嶺。</p>
