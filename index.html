@@ -1,1 +1,548 @@
-hello I am ted.
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>115年數據分析職訓班 - 學習紀錄</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .module-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            margin-top: 1.5rem;
+        }
+
+        h4 {
+            color: #555;
+            margin-top: 1.2rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            white-space: pre-wrap; /* 保留換行 */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            color: #856404;
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: Consolas, Monaco, monospace;
+            overflow-x: auto;
+            white-space: pre;
+            margin: 1rem 0;
+        }
+
+        details {
+            margin-bottom: 1rem;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        summary {
+            padding: 1rem;
+            cursor: pointer;
+            background-color: #f9f9f9;
+            font-weight: bold;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            float: right;
+            font-weight: bold;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #eee;
+        }
+
+        .details-content {
+            padding: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>115年數據分析職訓班</h1>
+    <p>學習履歷記錄</p>
+</header>
+
+<div class="container">
+
+    <!-- 學習內容 1 -->
+    <section class="module-section">
+        <h2>學習內容1、學習履歷-資料分析</h2>
+        <p><strong>主題：</strong>數據分析實戰全書：從 Git 版本控管到 Power BI 商業決策構建</p>
+
+        <details open>
+            <summary>1. 數據分析的核心思維與標準化流程</summary>
+            <div class="details-content">
+                <p>在現代商業環境中，數據已成為企業最核心的戰略資產。然而，原始數據本身並不具備商業價值，唯有透過「標準化分析流程」才能將其轉化為可執行的決策。建立一套可重複、可驗證的框架，不僅能提升決策的精準度，更能降低跨部門溝通的技術門檻。</p>
+                <h4>數據分析六大必要步驟：問、找、清、看、分、用</h4>
+                <p>資深分析顧問深知，專案失敗往往不是因為技術不足，而是因為缺乏問題意識。我們遵循「問、找、清、看、分、用」六大口訣，將分析邏輯標準化：</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>步驟</th>
+                            <th>定義與目標</th>
+                            <th>書店銷售分析案例應用</th>
+                            <th>具體產出</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. 問（問問題）</td>
+                            <td>明確分析目標，確保問題可被數據量化。</td>
+                            <td>週末的銷售額是否確實比平日高？</td>
+                            <td>商業問題定義書</td>
+                        </tr>
+                        <tr>
+                            <td>2. 找（找資料）</td>
+                            <td>識別並收集相關的原始記錄。</td>
+                            <td>提取上個月每日銷售金額、日期與星期紀錄。</td>
+                            <td>原始資料集 (Raw Data)</td>
+                        </tr>
+                        <tr>
+                            <td>3. 清（清資料）</td>
+                            <td>修正錯誤、處理缺漏值與統一格式。</td>
+                            <td>補足漏填的銷售額，統一星期的寫法。</td>
+                            <td>乾淨資料集 (Cleaned Data)</td>
+                        </tr>
+                        <tr>
+                            <td>4. 看（看資料）</td>
+                            <td>透過基礎彙總與視覺化觀察初步趨勢。</td>
+                            <td>計算發現週末平均銷售（5,800元）高於平日（3,200元）。</td>
+                            <td>初步觀察報告 / 長條圖</td>
+                        </tr>
+                        <tr>
+                            <td>5. 分（分析原因）</td>
+                            <td>深度挖掘現象背後的潛在商業訊息。</td>
+                            <td>發現週六下午的「親子說故事時間」有效帶動人流。</td>
+                            <td>洞察假設驗證</td>
+                        </tr>
+                        <tr>
+                            <td>6. 用（做決定）</td>
+                            <td>轉化為具體的行動建議與決策建議。</td>
+                            <td>建議週日試辦活動，並針對平日推出優惠。</td>
+                            <td>商業建議計畫書</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="warning-box">
+                    <strong>資深顧問的警告 (Consultant's Warning)：</strong> 非技術人員常犯的錯誤是跳過「問」與「清」。若問題意識不明，後續的數據挖掘將如大海撈針；若忽視清理，則會陷入「垃圾進，垃圾出 (Garbage In, Garbage Out)」的陷阱，導致錯誤決策。良好的流程能確保數據轉化為具備「說服力」的行動建議。在進入技術操作前，確立問題意識是專案成功的先決條件。
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>2. 開發環境配置與版本控制基礎：Git</summary>
+            <div class="details-content">
+                <p>對於數據架構師而言，版本控制 (Version Control) 是專案開發的基礎建設，而非額外工作。它確保了程式碼與配置變更的「可追蹤性 (Traceability)」，在多人協作環境下防止檔案衝突，並為專案提供了隨時回溯的「安全網」。</p>
+                <h4>Git 全域配置與初始化規範</h4>
+                <p>在開始任何分析前，必須建立標準化的身分識別與環境過濾機制：</p>
+                <h4>專案啟動工作流 (Project Initialization)</h4>
+                <p><strong>設定忽略檔 (.gitignore) 的「So What」價值：</strong> 忽略檔的核心價值在於「專案整潔」與「資安防護」。對於 BI 專案，應嚴禁將包含資料庫連線字串、API 金鑰或敏感原始資料的檔案推送到公共倉庫。良好的環境配置是後續 ETL 與資料建模穩定執行的基石。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>3. 全球數據工具生態系與雲端平台分析</summary>
+            <div class="details-content">
+                <p>當前的數據生態系呈現多元化發展，企業需根據「專業度、易用性、適用場景」三大維度進行工具選型。</p>
+                <h4>主流分析工具多維度比較</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>工具名稱</th>
+                            <th>專業度 (Professionalism)</th>
+                            <th>易用性 (Ease of Use)</th>
+                            <th>適用場景 (Scenarios)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Power BI</td>
+                            <td>中高 (強大模型能力)</td>
+                            <td>極高 (入門快)</td>
+                            <td>企業端全方位商業智慧、Microsoft 生態系。</td>
+                        </tr>
+                        <tr>
+                            <td>Tableau</td>
+                            <td>極高 (視覺美感極致)</td>
+                            <td>中 (學習曲線陡峭)</td>
+                            <td>高度自定義視覺化、深度探索性分析。</td>
+                        </tr>
+                        <tr>
+                            <td>Google Looker Studio</td>
+                            <td>低 (基礎報表為主)</td>
+                            <td>高 (Web 介面)</td>
+                            <td>電商、行銷廣告即時看板與 Google 生態整合。</td>
+                        </tr>
+                        <tr>
+                            <td>Fine BI</td>
+                            <td>中 (側重報表設計)</td>
+                            <td>中 (配置化操作)</td>
+                            <td>特定市場區域或傳統大中型企業固定報表。</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>雲端數據平台與服務架構分析</h4>
+                <p>在雲端運算方面，Microsoft Azure 提供了最完整的一站式服務：</p>
+                <p><strong>公開資料來源價值評估</strong><br>
+                在眾多工具中，Power BI 憑藉其低學習難度與高市佔率，成為構建企業級數據交付系統的首選。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>4. Power BI 深度解析：從資料架構到視覺化設計</summary>
+            <div class="details-content">
+                <p>Power BI 不僅是繪圖工具，它更是數據的「語意層 (Semantic Layer)」。它將底層複雜的關聯式資料轉化為決策者能直觀理解的商業洞察。</p>
+                <h4>檔案格式情境與管理規範</h4>
+                <h4>流程設計 (UI) 與《資料故事時代》精神</h4>
+                <p>視覺化設計的核心在於「降低認知負擔」。我們將報表層次定義如下：</p>
+                <h4>建模核心：DAX 與 DIM/FACT 架構</h4>
+                <p>在後端建模時，我們強調 DIM (維度表) 與 FACT (事實表) 的星型架構。DAX 語言 是驅動指標計算的核心引擎。透過「量值 (Measures)」進行動態彙總（如 YoY 成長率），而非僅依賴「計算資料行 (Calculated Columns)」，能確保模型在處理大數據量時的運算效能與靈活性。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>5. 數據交付與 ETL 現代化工程</summary>
+            <div class="details-content">
+                <p>高品質的報表源於嚴謹的數據工程。數據工程師 (DE) 負責技術端的資料交付，而數據分析師 (DA) 則負責需求挖掘，兩者間的界線在於「資料是否已準備好被分析」。</p>
+                <h4>ETL 工具選型與數據治理</h4>
+                <h4>「原始交易明細 (Transaction-level)」的不可替代性</h4>
+                <p>在模擬或準備資料時，必須反映原始層級。例如，每一筆記錄應代表一次真實的訂單交易，而非預先彙總後的日報。</p>
+                <p>紮實的後端清理是實現互動式報表的先決條件。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>6. 三位一體整合應用：SQL Server、Pandas 與 Power BI</summary>
+            <div class="details-content">
+                <p>透過整合三種技術棧，我們能建立一套從資料存放至最終決策的端到端 (End-to-End) 工作流。</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>工具</th>
+                            <th>關鍵角色</th>
+                            <th>核心功能與分工</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SQL Server</td>
+                            <td>資料來源與預處理</td>
+                            <td>存放原始交易明細，利用 GROUP BY 進行初步查詢與結構化清理，減輕下游運算壓力。</td>
+                        </tr>
+                        <tr>
+                            <td>Pandas (Python)</td>
+                            <td>深度統計與假設驗證</td>
+                            <td>進行複雜的數據清洗、離群值檢測、統計檢定 (如 t-test 驗證活動影響) 與科學建模。</td>
+                        </tr>
+                        <tr>
+                            <td>Power BI</td>
+                            <td>語意建模與視覺化決策</td>
+                            <td>建立 DIM/FACT 模型、DAX 計算指標、互動式報表，並發布分享洞察。</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>整合架構的商業價值 (So What)</h4>
+                <p>此架構完美平衡了「大規模運算效率」與「數據展示靈活性」。SQL Server 處理海量數據的沉重負擔，Pandas 確保分析的科學性，最終透過 Power BI 轉化為直觀的決策語言。</p>
+                <p><strong>總結：</strong> 所有的技術工具（無論是 Git 的版本追蹤、SQL 的資料提取、還是 Power BI 的互動設計）最終都必須服務於最初提出的商業問題。數據從業者的價值在於透過此「三位一體」的工作流，將零散的數字織成有意義的故事。</p>
+            </div>
+        </details>
+    </section>
+
+    <!-- 學習內容 2 -->
+    <section class="module-section">
+        <h2>學習內容2：學習履歷-SQL Server</h2>
+        <p><strong>主題：</strong>SQL Server 與商業智慧開發：從資料工程到多維度分析的實務指南</p>
+        <p>作為一名資深企業資料架構師，我深知在生產環境中，程式碼的優劣不僅影響當下的執行效率，更決定了系統長期的維護成本與擴展性。本指南結合 T-SQL 邏輯精要、ETL 工程實務與 SSAS 多維度模型設計，旨在為開發者提供一套具備架構高度且可立即落地實作的技術框架。</p>
+
+        <details open>
+            <summary>1. 核心開發基石：T-SQL 語法精要與邏輯控制</summary>
+            <div class="details-content">
+                <p>T-SQL 是資料庫開發的靈魂。在高併發與大數據的場景下，精確的邏輯控制是確保資料一致性與效能的唯一手段。</p>
+                <h4>變數管理與系統變數應用</h4>
+                <p>在複雜的 Stored Procedure 中，變數賦值方式的選擇至關重要：</p>
+                <h4>條件判斷與流程控制深度分析</h4>
+                <p>針對邏輯分支，應根據複雜度選擇最適工具。注意 IIF 為 SQL 2012+ 引入的語法。</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>特性 / 項目</th>
+                            <th>IF...ELSE</th>
+                            <th>IIF</th>
+                            <th>CASE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>語法類型</td>
+                            <td>流程控制語句</td>
+                            <td>內建純量函數</td>
+                            <td>運算式 (Expression)</td>
+                        </tr>
+                        <tr>
+                            <td>使用位置</td>
+                            <td>批次、預存程序、觸發程序</td>
+                            <td>SELECT, WHERE 等運算式處</td>
+                            <td>SELECT, WHERE, ORDER BY (最靈活)</td>
+                        </tr>
+                        <tr>
+                            <td>效能</td>
+                            <td>控制執行路徑，非資料運算</td>
+                            <td>內部轉為 CASE，效能良好</td>
+                            <td>效能優異，優化器深度支援</td>
+                        </tr>
+                        <tr>
+                            <td>版本要求</td>
+                            <td>所有版本</td>
+                            <td>SQL Server 2012+</td>
+                            <td>所有版本</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>實戰範例：多層巢狀判斷</h4>
+                <p>架構師必須考慮邏輯的可讀性。以下為針對產品定價的邏輯封裝範例：</p>
+                <div class="code-block">DECLARE @price MONEY;
+SELECT @price = 單價 FROM 產品資料 WHERE 產品編號 = 10;
+IF @price >= 50
+    PRINT '高價位產品';
+ELSE
+    IF @price >= 30 PRINT '中價位產品';
+    ELSE PRINT '低價位產品';</div>
+                
+                <h4>自動編號機制之權衡</h4>
+                <p>使用 IDENTITY(1,1) 時，必須預防「號碼用盡」與「跳號」問題。在進行大量資料遷移時，若需手動指定 ID，需開啟 SET IDENTITY_INSERT [Table] ON，並在作業結束後立即關閉。</p>
+                <p>T-SQL 的邏輯控制能力是開發的起點，而面對海量資料時，進階查詢結構與窗口函數則是提升效能的關鍵。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>2. 進階查詢結構：複雜資料處理與分頁演算法</summary>
+            <div class="details-content">
+                <p>在現代商業智慧應用中，我們經常需要處理排名、移動平均或複雜的分頁需求，這要求開發者精通視窗函數與 CTE。</p>
+                <h4>CTE (Common Table Expression) 之戰略優勢</h4>
+                <p>CTE 不僅是「臨時性的 View」，更是優化程式碼結構的利器，尤其在處理遞迴查詢或多層邏輯時，其可讀性遠高於子查詢。</p>
+                <div class="code-block">WITH Temp1 AS (
+    SELECT TOP(10) 員工編號, 姓名, 薪資 FROM 員工 ORDER BY 薪資 DESC
+),
+Temp2 AS (
+    SELECT TOP(5) 員工編號, 姓名, 薪資 FROM 員工 ORDER BY 薪資 DESC
+)
+SELECT Temp1.* FROM Temp1 LEFT JOIN Temp2 ON Temp1.員工編號 = Temp2.員工編號
+WHERE Temp2.員工編號 IS NULL; -- 取得排名 6-10 的員工</div>
+
+                <h4>分頁查詢技術的演進</h4>
+                <p>從早期的 TOP 配合 NOT IN 或 ROW_NUMBER()，到現代高效能應用程式的首選 OFFSET...FETCH：</p>
+                <h4>統計與視窗函數應用</h4>
+                <p>當查詢邏輯足以重用時，應將其封裝進視圖、函數或預存程序中，以實現模組化。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>3. 邏輯封裝與模組化開發：視圖、函數與預存程序</summary>
+            <div class="details-content">
+                <h4>視圖 (View) 的多重價值</h4>
+                <p>視圖主要用於隱藏複雜度與權限管控。架構師應善用 WITH SCHEMABINDING，這不僅能防止底層表結構被意外異動，更是建立「索引化視圖」的前提。</p>
+                <h4>預存程序 (SP) 與函數 (Function) 之深度對抗</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>特性</th>
+                            <th>預存程序 (Stored Procedure)</th>
+                            <th>函數 (Function)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>執行方式</td>
+                            <td>獨立執行 (EXEC)</td>
+                            <td>可嵌入 SELECT 語句中</td>
+                        </tr>
+                        <tr>
+                            <td>資料異動</td>
+                            <td>支援 INSERT / UPDATE / DELETE</td>
+                            <td>原則上僅能查詢，不可異動資料</td>
+                        </tr>
+                        <tr>
+                            <td>傳回值</td>
+                            <td>多個輸出參數 + 一個整數回傳值</td>
+                            <td>必須傳回指定型別或 Table</td>
+                        </tr>
+                        <tr>
+                            <td>效能</td>
+                            <td>編譯後執行，效能最優</td>
+                            <td>純量函數在 SELECT 中可能導致效能瓶頸</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>實戰範例：自定義訂單號碼函數</h4>
+                <p>以下為產出 yyyyMMdd + 6 位流水號的邏輯實作：</p>
+                <div class="code-block">CREATE FUNCTION dbo.自訂訂單號() RETURNS VARCHAR(14) AS
+BEGIN
+    DECLARE @prefix VARCHAR(8) = FORMAT(GETDATE(), 'yyyyMMdd');
+    DECLARE @lastID VARCHAR(14), @finalID VARCHAR(14);
+    SELECT TOP(1) @lastID = 訂單號碼 FROM 練習訂單 WHERE 訂單號碼 LIKE @prefix + '%' ORDER BY 訂單號碼 DESC;
+    IF @@ROWCOUNT = 0 SET @finalID = @prefix + '000001';
+    ELSE SET @finalID = @prefix + FORMAT(CONVERT(INT, SUBSTRING(@lastID, 9, 6)) + 1, '000000');
+    RETURN @finalID;
+END</div>
+                <h4>暫存物件選型之建築法則</h4>
+            </div>
+        </details>
+
+        <details>
+            <summary>4. 資料工程核心：ETL 流程與語意層架構</summary>
+            <div class="details-content">
+                <h4>ETL 框架與業務邏輯實務</h4>
+                <p>在 Transform (轉換) 階段，我們利用 View 將原始資料轉化為分析屬性。</p>
+                <h4>視圖作為 SSAS 的語意抽象層</h4>
+                <p>架構師不應讓 SSAS 直接連接物理表。使用 View 作為介面的四大優勢：</p>
+                <h4>高效能資料交換 (bcp)</h4>
+                <p>對於跨伺服器大量搬運，bcp 是唯一選擇。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>5. 多維度分析應用：SSAS Cube 與 MDX 查詢技術</summary>
+            <div class="details-content">
+                <h4>MDX 核心概念：Tuple 與 Set</h4>
+                <h4>時間序列與佔比分析</h4>
+                <p>MDX 的強項在於複雜的时间偏移計算：</p>
+                <h4>排序與排名實務 (DESC vs. BDESC)</h4>
+                <p>在進行 Top-N 分析時，架構師必須理解 BDESC 的價值。</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>6. 資料安全與管理：權限架構與備份策略</summary>
+            <div class="details-content">
+                <h4>行級安全性 (RLS) 實踐</h4>
+                <p>透過 RLS，不同部門的經理查詢同一張表卻能看到不同結果。</p>
+                <h4>災難復原矩陣</h4>
+                <p>根據業務容忍度選取復原模式：</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>7. 效能優化與存取實務：索引、壓縮與觸發程序</summary>
+            <div class="details-content">
+                <h4>儲存優化：傳統索引 vs. CCSI</h4>
+                <p>在高階分析中，叢集資料行存放區索引 (CCSI) 是效能的分水嶺。</p>
+                <h4>觸發程序 (Trigger)：隱性效能殺手</h4>
+                <p>Trigger 的運算與原始交易同步執行，必須極其輕量。</p>
+                <h4>結論</h4>
+                <p>一名卓越的資料架構師必須從 T-SQL 的邏輯精準度出發，透過封裝降低維護成本，利用 ETL 與 View 穩定語意層，最後輔以索引優化與嚴謹的備份機制，方能建構出支撐企業決策的商業智慧堡壘。</p>
+            </div>
+        </details>
+    </section>
+
+</div>
+
+<footer>
+    <p>115年數據分析職訓班 學習紀錄</p>
+</footer>
+
+</body>
+</html>
