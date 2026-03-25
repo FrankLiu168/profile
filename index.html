@@ -274,17 +274,8 @@
 
     <div class="container">
         <section class="module-section">
-            <h2>學習內容總覽</h2>
-            <h3>學習內容一、資料分析</h3>
-            <ul>
-                <li><a href="#lesson11">數據分析的核心思維與標準化流程</a></li>
-                <li><a href="#lesson12">開發環境配置與版本控制基礎：Git</a></li>
-                <li><a href="#lesson13">全球數據工具生態系與雲端平台分析</a></li>
-                <li><a href="#lesson14">Power BI 深度解析：從資料架構到視覺化設計</a></li>
-                <li><a href="#lesson15">數據交付與 ETL 現代化工程</a></li>
-                <li><a href="#lesson16">三位一體整合應用：SQL Server、Pandas 與 Power BI</a></li>
-            </ul>
-            <h3>學習內容二：SQL Server</h3>
+            <h2>學習內容總覽</h2>           
+            <h3>學習內容一：SQL Server</h3>
             <ul>
                 <li><a href="#lesson21">核心開發基石：T-SQL 語法精要與邏輯控制</a></li>
                 <li><a href="#lesson22">進階查詢結構：複雜資料處理與分頁演算法</a></li>
@@ -294,203 +285,23 @@
                 <li><a href="#lesson26">資料安全與管理：權限架構與備份策略</a></li>
                 <li><a href="#lesson27">效能優化與存取實務：索引、壓縮與觸發程序</a></li>
             </ul>
+             <h3>學習內容二、資料分析</h3>
+            <ul>
+                <li><a href="#lesson11">數據分析的核心思維與標準化流程</a></li>
+                <li><a href="#lesson12">開發環境配置與版本控制基礎：Git</a></li>
+                <li><a href="#lesson13">全球數據工具生態系與雲端平台分析</a></li>
+                <li><a href="#lesson14">Power BI 深度解析：從資料架構到視覺化設計</a></li>
+                <li><a href="#lesson15">數據交付與 ETL 現代化工程</a></li>
+                <li><a href="#lesson16">三位一體整合應用：SQL Server、Pandas 與 Power BI</a></li>
+            </ul>
 
-        </section>
-
-        <!-- 學習內容 1 -->
-        <section class="module-section">
-            <h2>資料分析心智圖</h2>
-            <p><img src="images/mind2.jpg" alt="學習心智圖" style="max-width: 50%; height: auto;"></p>
-            <h2>學習內容一、學習履歷-資料分析</h2>
-            <p><strong>主題：</strong>數據分析實戰全書：從 Git 版本控管到 Power BI 商業決策構建</p>
-
-            <details open>
-                <summary id="lesson11">1. 數據分析的核心思維與標準化流程</summary>
-                <div class="details-content">
-                    <p>在現代商業環境中，數據已成為企業最核心的戰略資產。然而，原始數據本身並不具備商業價值，唯有透過「標準化分析流程」才能將其轉化為可執行的決策。建立一套可重複、可驗證的框架，不僅能提升決策的精準度，更能降低跨部門溝通的技術門檻。
-                    </p>
-                    <h4>數據分析六大必要步驟：問、找、清、看、分、用</h4>
-                    <p>資深分析顧問深知，專案失敗往往不是因為技術不足，而是因為缺乏問題意識。我們遵循「問、找、清、看、分、用」六大口訣，將分析邏輯標準化：</p>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>步驟</th>
-                                <th>定義與目標</th>
-                                <th>書店銷售分析案例應用</th>
-                                <th>具體產出</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1. 問（問問題）</td>
-                                <td>明確分析目標，確保問題可被數據量化。</td>
-                                <td>週末的銷售額是否確實比平日高？</td>
-                                <td>商業問題定義書</td>
-                            </tr>
-                            <tr>
-                                <td>2. 找（找資料）</td>
-                                <td>識別並收集相關的原始記錄。</td>
-                                <td>提取上個月每日銷售金額、日期與星期紀錄。</td>
-                                <td>原始資料集 (Raw Data)</td>
-                            </tr>
-                            <tr>
-                                <td>3. 清（清資料）</td>
-                                <td>修正錯誤、處理缺漏值與統一格式。</td>
-                                <td>補足漏填的銷售額，統一星期的寫法。</td>
-                                <td>乾淨資料集 (Cleaned Data)</td>
-                            </tr>
-                            <tr>
-                                <td>4. 看（看資料）</td>
-                                <td>透過基礎彙總與視覺化觀察初步趨勢。</td>
-                                <td>計算發現週末平均銷售（5,800元）高於平日（3,200元）。</td>
-                                <td>初步觀察報告 / 長條圖</td>
-                            </tr>
-                            <tr>
-                                <td>5. 分（分析原因）</td>
-                                <td>深度挖掘現象背後的潛在商業訊息。</td>
-                                <td>發現週六下午的「親子說故事時間」有效帶動人流。</td>
-                                <td>洞察假設驗證</td>
-                            </tr>
-                            <tr>
-                                <td>6. 用（做決定）</td>
-                                <td>轉化為具體的行動建議與決策建議。</td>
-                                <td>建議週日試辦活動，並針對平日推出優惠。</td>
-                                <td>商業建議計畫書</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </details>
-
-            <details>
-                <summary id="lesson12">2. 開發環境配置與版本控制基礎：Git</summary>
-                <div class="details-content">
-                    <p>對於數據架構師而言，版本控制 (Version Control) 是專案開發的基礎建設，而非額外工作。它確保了程式碼與配置變更的「可追蹤性
-                        (Traceability)」，在多人協作環境下防止檔案衝突，並為專案提供了隨時回溯的「安全網」。</p>
-                    <h4>Git 全域配置與初始化規範</h4>
-                    <p>在開始任何分析前，必須建立標準化的身分識別與環境過濾機制：</p>
-                    <h4>專案啟動工作流 (Project Initialization)</h4>
-                    <p><strong>設定忽略檔 (.gitignore) 的「So What」價值：</strong> 忽略檔的核心價值在於「專案整潔」與「資安防護」。對於 BI
-                        專案，應嚴禁將包含資料庫連線字串、API 金鑰或敏感原始資料的檔案推送到公共倉庫。良好的環境配置是後續 ETL 與資料建模穩定執行的基石。</p>
-                </div>
-            </details>
-
-            <details>
-                <summary id="lesson13">3. 全球數據工具生態系與雲端平台分析</summary>
-                <div class="details-content">
-                    <p>當前的數據生態系呈現多元化發展，企業需根據「專業度、易用性、適用場景」三大維度進行工具選型。</p>
-                    <h4>主流分析工具多維度比較</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>工具名稱</th>
-                                <th>專業度 (Professionalism)</th>
-                                <th>易用性 (Ease of Use)</th>
-                                <th>適用場景 (Scenarios)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Power BI</td>
-                                <td>中高 (強大模型能力)</td>
-                                <td>極高 (入門快)</td>
-                                <td>企業端全方位商業智慧、Microsoft 生態系。</td>
-                            </tr>
-                            <tr>
-                                <td>Tableau</td>
-                                <td>極高 (視覺美感極致)</td>
-                                <td>中 (學習曲線陡峭)</td>
-                                <td>高度自定義視覺化、深度探索性分析。</td>
-                            </tr>
-                            <tr>
-                                <td>Google Looker Studio</td>
-                                <td>低 (基礎報表為主)</td>
-                                <td>高 (Web 介面)</td>
-                                <td>電商、行銷廣告即時看板與 Google 生態整合。</td>
-                            </tr>
-                            <tr>
-                                <td>Fine BI</td>
-                                <td>中 (側重報表設計)</td>
-                                <td>中 (配置化操作)</td>
-                                <td>特定市場區域或傳統大中型企業固定報表。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h4>雲端數據平台與服務架構分析</h4>
-                    <p>在雲端運算方面，Microsoft Azure 提供了最完整的一站式服務：</p>
-                    <p><strong>公開資料來源價值評估</strong><br>
-                        在眾多工具中，Power BI 憑藉其低學習難度與高市佔率，成為構建企業級數據交付系統的首選。</p>
-                </div>
-            </details>
-
-            <details>
-                <summary id="lesson14">4. Power BI 深度解析：從資料架構到視覺化設計</summary>
-                <div class="details-content">
-                    <p>Power BI 不僅是繪圖工具，它更是數據的「語意層 (Semantic Layer)」。它將底層複雜的關聯式資料轉化為決策者能直觀理解的商業洞察。</p>
-                    <h4>檔案格式情境與管理規範</h4>
-                    <h4>流程設計 (UI) 與《資料故事時代》精神</h4>
-                    <p>視覺化設計的核心在於「降低認知負擔」。我們將報表層次定義如下：</p>
-                    <h4>建模核心：DAX 與 DIM/FACT 架構</h4>
-                    <p>在後端建模時，我們強調 DIM (維度表) 與 FACT (事實表) 的星型架構。DAX 語言 是驅動指標計算的核心引擎。透過「量值 (Measures)」進行動態彙總（如 YoY
-                        成長率），而非僅依賴「計算資料行 (Calculated Columns)」，能確保模型在處理大數據量時的運算效能與靈活性。</p>
-                </div>
-            </details>
-
-            <details>
-                <summary id="lesson15">5. 數據交付與 ETL 現代化工程</summary>
-                <div class="details-content">
-                    <p>高品質的報表源於嚴謹的數據工程。數據工程師 (DE) 負責技術端的資料交付，而數據分析師 (DA) 則負責需求挖掘，兩者間的界線在於「資料是否已準備好被分析」。</p>
-                    <h4>ETL 工具選型與數據治理</h4>
-                    <h4>「原始交易明細 (Transaction-level)」的不可替代性</h4>
-                    <p>在模擬或準備資料時，必須反映原始層級。例如，每一筆記錄應代表一次真實的訂單交易，而非預先彙總後的日報。</p>
-                    <p>紮實的後端清理是實現互動式報表的先決條件。</p>
-                </div>
-            </details>
-
-            <details>
-                <summary id="lesson16">6. 三位一體整合應用：SQL Server、Pandas 與 Power BI</summary>
-                <div class="details-content">
-                    <p>透過整合三種技術棧，我們能建立一套從資料存放至最終決策的端到端 (End-to-End) 工作流。</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>工具</th>
-                                <th>關鍵角色</th>
-                                <th>核心功能與分工</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>SQL Server</td>
-                                <td>資料來源與預處理</td>
-                                <td>存放原始交易明細，利用 GROUP BY 進行初步查詢與結構化清理，減輕下游運算壓力。</td>
-                            </tr>
-                            <tr>
-                                <td>Pandas (Python)</td>
-                                <td>深度統計與假設驗證</td>
-                                <td>進行複雜的數據清洗、離群值檢測、統計檢定 (如 t-test 驗證活動影響) 與科學建模。</td>
-                            </tr>
-                            <tr>
-                                <td>Power BI</td>
-                                <td>語意建模與視覺化決策</td>
-                                <td>建立 DIM/FACT 模型、DAX 計算指標、互動式報表，並發布分享洞察。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h4>整合架構的商業價值 (So What)</h4>
-                    <p>此架構完美平衡了「大規模運算效率」與「數據展示靈活性」。SQL Server 處理海量數據的沉重負擔，Pandas 確保分析的科學性，最終透過 Power BI 轉化為直觀的決策語言。</p>
-                    <p><strong>總結：</strong> 所有的技術工具（無論是 Git 的版本追蹤、SQL 的資料提取、還是 Power BI
-                        的互動設計）最終都必須服務於最初提出的商業問題。數據從業者的價值在於透過此「三位一體」的工作流，將零散的數字織成有意義的故事。</p>
-                </div>
-            </details>
-        </section>
+        </section>     
 
         <!-- 學習內容 2 -->
         <section class="module-section">
             <h2>SQL Server 心智圖</h2>
             <p><img src="images/mind1.jpg" alt="學習心智圖" style="max-width: 50%; height: auto;"></p>
-            <h2>學習內容二：學習履歷-SQL Server</h2>
+            <h2>學習內容一：學習履歷-SQL Server</h2>
             <p><strong>主題：</strong>SQL Server 與商業智慧開發：從資料工程到多維度分析的實務指南</p>
             <p>作為一名資深企業資料架構師，我深知在生產環境中，程式碼的優劣不僅影響當下的執行效率，更決定了系統長期的維護成本與擴展性。本指南結合 T-SQL 邏輯精要、ETL 工程實務與 SSAS
                 多維度模型設計，旨在為開發者提供一套具備架構高度且可立即落地實作的技術框架。</p>
@@ -676,7 +487,194 @@
                 </div>
             </details>
         </section>
+         <!-- 學習內容 1 -->
+        <section class="module-section">
+            <h2>資料分析心智圖</h2>
+            <p><img src="images/mind2.jpg" alt="學習心智圖" style="max-width: 50%; height: auto;"></p>
+            <h2>學習內容二、學習履歷-資料分析</h2>
+            <p><strong>主題：</strong>數據分析實戰全書：從 Git 版本控管到 Power BI 商業決策構建</p>
 
+            <details open>
+                <summary id="lesson11">1. 數據分析的核心思維與標準化流程</summary>
+                <div class="details-content">
+                    <p>在現代商業環境中，數據已成為企業最核心的戰略資產。然而，原始數據本身並不具備商業價值，唯有透過「標準化分析流程」才能將其轉化為可執行的決策。建立一套可重複、可驗證的框架，不僅能提升決策的精準度，更能降低跨部門溝通的技術門檻。
+                    </p>
+                    <h4>數據分析六大必要步驟：問、找、清、看、分、用</h4>
+                    <p>資深分析顧問深知，專案失敗往往不是因為技術不足，而是因為缺乏問題意識。我們遵循「問、找、清、看、分、用」六大口訣，將分析邏輯標準化：</p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>步驟</th>
+                                <th>定義與目標</th>
+                                <th>書店銷售分析案例應用</th>
+                                <th>具體產出</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 問（問問題）</td>
+                                <td>明確分析目標，確保問題可被數據量化。</td>
+                                <td>週末的銷售額是否確實比平日高？</td>
+                                <td>商業問題定義書</td>
+                            </tr>
+                            <tr>
+                                <td>2. 找（找資料）</td>
+                                <td>識別並收集相關的原始記錄。</td>
+                                <td>提取上個月每日銷售金額、日期與星期紀錄。</td>
+                                <td>原始資料集 (Raw Data)</td>
+                            </tr>
+                            <tr>
+                                <td>3. 清（清資料）</td>
+                                <td>修正錯誤、處理缺漏值與統一格式。</td>
+                                <td>補足漏填的銷售額，統一星期的寫法。</td>
+                                <td>乾淨資料集 (Cleaned Data)</td>
+                            </tr>
+                            <tr>
+                                <td>4. 看（看資料）</td>
+                                <td>透過基礎彙總與視覺化觀察初步趨勢。</td>
+                                <td>計算發現週末平均銷售（5,800元）高於平日（3,200元）。</td>
+                                <td>初步觀察報告 / 長條圖</td>
+                            </tr>
+                            <tr>
+                                <td>5. 分（分析原因）</td>
+                                <td>深度挖掘現象背後的潛在商業訊息。</td>
+                                <td>發現週六下午的「親子說故事時間」有效帶動人流。</td>
+                                <td>洞察假設驗證</td>
+                            </tr>
+                            <tr>
+                                <td>6. 用（做決定）</td>
+                                <td>轉化為具體的行動建議與決策建議。</td>
+                                <td>建議週日試辦活動，並針對平日推出優惠。</td>
+                                <td>商業建議計畫書</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+            <details>
+                <summary id="lesson12">2. 開發環境配置與版本控制基礎：Git</summary>
+                <div class="details-content">
+                    <p>對於數據架構師而言，版本控制 (Version Control) 是專案開發的基礎建設，而非額外工作。它確保了程式碼與配置變更的「可追蹤性
+                        (Traceability)」，在多人協作環境下防止檔案衝突，並為專案提供了隨時回溯的「安全網」。</p>
+                    <h4>Git 全域配置與初始化規範</h4>
+                    <p>在開始任何分析前，必須建立標準化的身分識別與環境過濾機制：</p>
+                    <h4>專案啟動工作流 (Project Initialization)</h4>
+                    <p><strong>設定忽略檔 (.gitignore) 的「So What」價值：</strong> 忽略檔的核心價值在於「專案整潔」與「資安防護」。對於 BI
+                        專案，應嚴禁將包含資料庫連線字串、API 金鑰或敏感原始資料的檔案推送到公共倉庫。良好的環境配置是後續 ETL 與資料建模穩定執行的基石。</p>
+                </div>
+            </details>
+
+            <details>
+                <summary id="lesson13">3. 全球數據工具生態系與雲端平台分析</summary>
+                <div class="details-content">
+                    <p>當前的數據生態系呈現多元化發展，企業需根據「專業度、易用性、適用場景」三大維度進行工具選型。</p>
+                    <h4>主流分析工具多維度比較</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>工具名稱</th>
+                                <th>專業度 (Professionalism)</th>
+                                <th>易用性 (Ease of Use)</th>
+                                <th>適用場景 (Scenarios)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Power BI</td>
+                                <td>中高 (強大模型能力)</td>
+                                <td>極高 (入門快)</td>
+                                <td>企業端全方位商業智慧、Microsoft 生態系。</td>
+                            </tr>
+                            <tr>
+                                <td>Tableau</td>
+                                <td>極高 (視覺美感極致)</td>
+                                <td>中 (學習曲線陡峭)</td>
+                                <td>高度自定義視覺化、深度探索性分析。</td>
+                            </tr>
+                            <tr>
+                                <td>Google Looker Studio</td>
+                                <td>低 (基礎報表為主)</td>
+                                <td>高 (Web 介面)</td>
+                                <td>電商、行銷廣告即時看板與 Google 生態整合。</td>
+                            </tr>
+                            <tr>
+                                <td>Fine BI</td>
+                                <td>中 (側重報表設計)</td>
+                                <td>中 (配置化操作)</td>
+                                <td>特定市場區域或傳統大中型企業固定報表。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>雲端數據平台與服務架構分析</h4>
+                    <p>在雲端運算方面，Microsoft Azure 提供了最完整的一站式服務：</p>
+                    <p><strong>公開資料來源價值評估</strong><br>
+                        在眾多工具中，Power BI 憑藉其低學習難度與高市佔率，成為構建企業級數據交付系統的首選。</p>
+                </div>
+            </details>
+
+            <details>
+                <summary id="lesson14">4. Power BI 深度解析：從資料架構到視覺化設計</summary>
+                <div class="details-content">
+                    <p>Power BI 不僅是繪圖工具，它更是數據的「語意層 (Semantic Layer)」。它將底層複雜的關聯式資料轉化為決策者能直觀理解的商業洞察。</p>
+                    <h4>檔案格式情境與管理規範</h4>
+                    <h4>流程設計 (UI) 與《資料故事時代》精神</h4>
+                    <p>視覺化設計的核心在於「降低認知負擔」。我們將報表層次定義如下：</p>
+                    <h4>建模核心：DAX 與 DIM/FACT 架構</h4>
+                    <p>在後端建模時，我們強調 DIM (維度表) 與 FACT (事實表) 的星型架構。DAX 語言 是驅動指標計算的核心引擎。透過「量值 (Measures)」進行動態彙總（如 YoY
+                        成長率），而非僅依賴「計算資料行 (Calculated Columns)」，能確保模型在處理大數據量時的運算效能與靈活性。</p>
+                </div>
+            </details>
+
+            <details>
+                <summary id="lesson15">5. 數據交付與 ETL 現代化工程</summary>
+                <div class="details-content">
+                    <p>高品質的報表源於嚴謹的數據工程。數據工程師 (DE) 負責技術端的資料交付，而數據分析師 (DA) 則負責需求挖掘，兩者間的界線在於「資料是否已準備好被分析」。</p>
+                    <h4>ETL 工具選型與數據治理</h4>
+                    <h4>「原始交易明細 (Transaction-level)」的不可替代性</h4>
+                    <p>在模擬或準備資料時，必須反映原始層級。例如，每一筆記錄應代表一次真實的訂單交易，而非預先彙總後的日報。</p>
+                    <p>紮實的後端清理是實現互動式報表的先決條件。</p>
+                </div>
+            </details>
+
+            <details>
+                <summary id="lesson16">6. 三位一體整合應用：SQL Server、Pandas 與 Power BI</summary>
+                <div class="details-content">
+                    <p>透過整合三種技術棧，我們能建立一套從資料存放至最終決策的端到端 (End-to-End) 工作流。</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>工具</th>
+                                <th>關鍵角色</th>
+                                <th>核心功能與分工</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SQL Server</td>
+                                <td>資料來源與預處理</td>
+                                <td>存放原始交易明細，利用 GROUP BY 進行初步查詢與結構化清理，減輕下游運算壓力。</td>
+                            </tr>
+                            <tr>
+                                <td>Pandas (Python)</td>
+                                <td>深度統計與假設驗證</td>
+                                <td>進行複雜的數據清洗、離群值檢測、統計檢定 (如 t-test 驗證活動影響) 與科學建模。</td>
+                            </tr>
+                            <tr>
+                                <td>Power BI</td>
+                                <td>語意建模與視覺化決策</td>
+                                <td>建立 DIM/FACT 模型、DAX 計算指標、互動式報表，並發布分享洞察。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>整合架構的商業價值 (So What)</h4>
+                    <p>此架構完美平衡了「大規模運算效率」與「數據展示靈活性」。SQL Server 處理海量數據的沉重負擔，Pandas 確保分析的科學性，最終透過 Power BI 轉化為直觀的決策語言。</p>
+                    <p><strong>總結：</strong> 所有的技術工具（無論是 Git 的版本追蹤、SQL 的資料提取、還是 Power BI
+                        的互動設計）最終都必須服務於最初提出的商業問題。數據從業者的價值在於透過此「三位一體」的工作流，將零散的數字織成有意義的故事。</p>
+                </div>
+            </details>
+        </section>
     </div>
 
     <footer>
